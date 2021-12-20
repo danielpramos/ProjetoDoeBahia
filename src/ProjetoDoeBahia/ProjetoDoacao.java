@@ -199,7 +199,7 @@ String numCadastro,String cepCadastro,String doador, String receptor, int opcao)
 							System.out.println("============================================\n\n");
 							
 							System.out.printf("\t\t\t\t\t\tAguarde Confirmação de pagamento...\n\n");
-							Thread.sleep(5000);
+							Thread.sleep(7000);
 							System.out.println("\t\t========================================================================================================");
 							System.out.println("\nVocê acabou de doar R$ 20,00 pelo pix.");
 							System.out.println("Muito Obrigado pela doação, Você vai fazer o dia de alguem melhor!");
@@ -211,9 +211,10 @@ String numCadastro,String cepCadastro,String doador, String receptor, int opcao)
 							System.out.println("--------------------------------------------------\n\n");
 							
 							System.out.println("\t\t========================================================================================================");
-							System.out.printf("Copie e cole o codigo de fatura gerado ");	
-							System.out.printf("Boleto: 1253.7564.7465.7857.6574.86700000");
+							System.out.printf("\nCopie e cole o codigo de fatura gerado ");	
+							System.out.printf("\nBoleto: 1253.7564.7465.7857.6574.86700000");
 							System.out.println("============================================\n\n");
+							leia.nextLine();
 							
 							System.out.println("\t\t========================================================================================================");
 							System.out.println("\nVocê acabou de gerar um boleto de doação  de R$ 20,00.");
@@ -385,7 +386,7 @@ String numCadastro,String cepCadastro,String doador, String receptor, int opcao)
 						System.out.println("\n\nVocê selecionou doação livre");
 						System.out.println("--------------------------------\n\n");
 						System.out.printf("\nInsira o valor que deseja doar:");
-						System.out.println("--------------------------------------------------");
+						System.out.println("\n--------------------------------------------------");
 						String numero = leia.nextLine();
 					
 						String dinheiro ;
@@ -430,8 +431,8 @@ String numCadastro,String cepCadastro,String doador, String receptor, int opcao)
 							System.out.println("Voce Selecionou 'Pix' como método de pagamento");
 							System.out.println("--------------------------------------------------\n\n");
 							System.out.println("============================================"); 
-							System.out.printf("Copie e cole a chave pix gerada: ");
-							System.out.printf("Chave: f123ge325-df3g-41bc-s5de");
+							System.out.printf("\nCopie e cole a chave pix gerada: ");
+							System.out.printf("\nChave: f123ge325-df3g-41bc-s5de");
 							System.out.println("\n============================================\n\n");
 							
 							System.out.printf("\t\t\t\t\t\tAguarde Confirmação de pagamento...\n\n");
@@ -447,8 +448,8 @@ String numCadastro,String cepCadastro,String doador, String receptor, int opcao)
 							System.out.println("--------------------------------------------------\n\n");
 							
 							System.out.println("\t\t========================================================================================================");
-							System.out.printf("Copie e cole o codigo de fatura gerado ");	
-							System.out.printf("Boleto: 1253.7564.7465.7857.6574.86700000");
+							System.out.printf("\nCopie e cole o codigo de fatura gerado ");	
+							System.out.printf("\nBoleto: 1253.7564.7465.7857.6574.86700000");
 							System.out.println("\n============================================\n\n");
 							
 							System.out.println("\t\t========================================================================================================");
@@ -461,11 +462,7 @@ String numCadastro,String cepCadastro,String doador, String receptor, int opcao)
 							leia.nextLine();
 							System.out.println("\n\n\t\tMÉTODO DE PAGAMENTO INVÁLIDO");
 							break;
-						}
-						
-						break;
-				
-						
+						}	
 					default:
 						
 						System.out.println("\n\n\t\tVALOR DO PAGAMENTO INVÁLIDO");
